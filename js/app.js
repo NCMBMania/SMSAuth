@@ -8,8 +8,8 @@ $(() => {
     e.preventDefault();
     const params = {
       email: $('#inputEmail').val(),
-      password: $('#inputPassword').val().replace(/\-/g, '').replace(/^0/, ''),
-      tel: $('#inputTel').val()
+      password: $('#inputPassword').val(),
+      tel: $('#inputTel').val().replace(/\-/g, '').replace(/^0/, '')
     };
     ncmb.Script
       .data(params)
